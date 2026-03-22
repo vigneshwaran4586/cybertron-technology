@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="web_ctf.css">
+    <link rel="icon" href="image/icon1.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_CTF</title>
+</head>
+<body>
+     <div id="preloader">
+    </div>
+    <div class="container"><h1>Welcome To Web Exploit CTF</h1></div>
+    <div class="warmup" id="warmup">
+        <form>
+        <h2>Warmup</h2>
+        <p>When you inspect the website you can find the flag but remember the flag alway not in the plaintext</p>
+        <a href="https://webexploit.vercel.app/">Click Here To Start</a><br><br>
+        <center>
+        <div class="input-box">
+            <input type="text" placeholder="Enter the flag here" id="flag1" value>
+        </div><br>
+        <button type="submit" onclick="check()">Submit</button>
+        </center>
+        </form>
+    </div>
+    <script src="web_ctf.js"></script>
+     <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display ="none";
+        })
+    </script>
+</body>
+</html>

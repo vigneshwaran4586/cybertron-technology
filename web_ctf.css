@@ -1,0 +1,29 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container h1{
+    text-align: center;
+}
+.warmup{
+    width: 420px;
+    height: 210px;
+    background-color: aqua;
+    border-radius: 40px;
+    backdrop-filter: blur(200px);
+}
+.warmup h2{
+    text-align: center;
+}
+.input-box input{
+    border: none;
+    outline: none;
+}
+#preloader{
+    background: #000 url(image/loder.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow-y: none;
+}

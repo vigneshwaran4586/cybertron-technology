@@ -1,0 +1,98 @@
+*{
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.bob{
+    margin: 0;
+    padding: 0;
+    background-image: url(image/Background1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.cybertorn{
+    margin-right: 1;
+    width: 75px;
+}
+.headers{
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+      text-decoration: none;
+      color: white;
+      margin-right: 0px;
+}
+#preloader{
+    background: #000 url(image/loder.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow-y: none;
+}
+.about-founder {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.founder-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.founder-desc {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.founder-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.slides{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+.slides::-webkit-scrollbar{
+       display: none;
+}
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1 em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+}
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
